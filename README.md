@@ -24,17 +24,21 @@ Composer is included
 docker-compose run php-fpm composer 
 ```
 
-Create a Slim project 
+#### Symfony Project
+
+Run this if you are building a traditional web application
 
 ```
 docker-compose run php-fpm composer create-project symfony/website-skeleton .
+
 ```
-
-Create a symfony project 
-
+Run this if you are building a microservice, console application or API
 ```
 docker-compose run php-fpm composer create-project symfony/website-skeleton .
+
 ```
+
+
 
 To run fixtures
 
