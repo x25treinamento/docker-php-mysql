@@ -18,16 +18,22 @@ docker-compose up
 
 ### PHP (PHP-FPM)
 
-Create a symfony project 
+Composer is included
+
+```
+docker-compose run php-fpm composer 
+```
+
+Create a Slim project 
 
 ```
 docker-compose run php-fpm composer create-project symfony/website-skeleton .
 ```
 
-Composer is included
+Create a symfony project 
 
 ```
-docker-compose run php-fpm composer 
+docker-compose run php-fpm composer create-project symfony/website-skeleton .
 ```
 
 To run fixtures
